@@ -1,0 +1,5 @@
+# Node.js (server folder)
+server/node_modules/ 
+
+# React (client folder)
+client/node_modules/
