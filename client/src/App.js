@@ -7,16 +7,18 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to='/createpost'>Create A Post</Link>
-        <Link to='/'>Home Page</Link>
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/createpost' exact element={<CreatePost />} /> 
-          {/* <Route path='/createpost' exact component={CreatePost} />
-          <Route path='/post/:id' exact component={Post} /> */}
-        </Routes>
+        <nav className="navbar">
+          <Link to='/createpost' className="nav-link">Create A Post</Link>
+          <Link to='/' className="nav-link">Home Page</Link>
+        </nav>
+        <div className="content">
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/createpost' exact element={<CreatePost />} />
+          </Routes>
+        </div>
       </Router>
-     </div> 
+    </div> 
   );
 }
 

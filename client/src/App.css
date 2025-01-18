@@ -1,65 +1,164 @@
+/* General App Styles */
 .App {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  flex-direction: column;
+  /* padding-top: 40px ; */
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.post {
-  width: 400px;
-  height: 300px;
-  border-radius: 10px;
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  border: 1px solid lightgray;
-  font-family: Arial, Helvetica, sans-serif;
-
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.post:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  cursor: pointer;
+.nav-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
-.post .title {
-  flex: 20%;
-  border-bottom: 1px solid lightgray;
-  background-color: dodgerblue;
-  display: grid;
-  place-content: center;
-  color: white;
+.nav-link:hover {
+  color: #0056b3;
 }
 
-.post .body {
-  flex: 60%;
-  display: grid;
-  place-content: center;
+/* Content Container */
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Home Page Styles */
+.home-container {
   text-align: center;
 }
 
-.post .footer {
-  flex: 20%;
-  border-top: 1px solid lightgray;
+.home-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Post Styles */
+.posts-container {
   display: flex;
-  align-items: center;
-  padding-left: 15px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
   background-color: dodgerblue;
-  color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+}
+
+.body {
+  margin-bottom: 10px;
+}
+
+.footer {
+  font-size: 1rem;
+  color: gray;
+  background-color: dodgerblue;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.create-post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.create-post-page h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: #e74c3c;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:active {
+  background-color: #003f7f;
 }
