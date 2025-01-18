@@ -162,3 +162,71 @@ input[type="text"]:focus {
 .submit-button:active {
   background-color: #003f7f;
 }
+
+/* Styles généraux */
+.postPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Section gauche */
+.leftSide {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du post */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Contenu du post */
+.postText {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Footer : auteur ou username */
+.footer {
+  font-size: 0.9rem;
+  color: #888888;
+  font-style: italic;
+  margin-top: auto;
+  text-align: right;
+}
+
+/* Section droite */
+.rightSide {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section des commentaires */
+.rightSide h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 15px;
+}
