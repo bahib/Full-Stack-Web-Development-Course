@@ -7,12 +7,19 @@ router.get('/', async (req, res) => {
     res.json(listOfComments);
 });
 
-router.get('/byPostId/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     const id = req.params.id;
     const comments = await Comments.findAll({ where: { PostId: id } });
     res.json(comments);
 }
 );
+
+router.post('/', async (req, res) => {
+    const comment = req.body;
+    await Comments.create(comment);
+    res.json(comment);
+});
+
 
 
 
